@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1115;
+    color: white;
+}
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+
+    border-top: 2px solid #8b6b55;
+}
+
+.leftside {
+    width: 50%;
+    min-height: 100vh;
+
+    background-color: #080e12;
+
+    position: relative;
+
+    border-right: 1px solid #39464e;
+}
+
+.instalogo {
+    width: 62px;
+    height: 62px;
+
+    border: 5px solid #e1306c;
+
+    border-radius: 18px;
+
+    position: absolute;
+
+    top: 55px;
+    left: 40px;
+
+    background: linear-gradient(
+        45deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf
+    );
+
+    border: none;
+}
+
+
+
+.instalogo::before {
+    content: "";
+
+    position: absolute;
+
+    width: 42px;
+    height: 42px;
+
+    border: 4px solid white;
+
+    border-radius: 13px;
+
+    left: 6px;
+    top: 6px;
+}
+
+
+.logo-circle {
+    width: 18px;
+    height: 18px;
+
+    border: 4px solid white;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    left: 18px;
+    top: 18px;
+
+    z-index: 2;
+}
+
+.logo-dot {
+    width: 6px;
+    height: 6px;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    right: 10px;
+    top: 11px;
+
+    z-index: 2;
+}
+
+
+.left-text {
+    position: absolute;
+
+    top: 145px;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+.left-text h1 {
+    font-size: 28px;
+
+    line-height: 1.9;
+
+    font-weight: 500;
+}
+
+.left-text span {
+    background: linear-gradient(
+        90deg,
+        #ff3040,
+        #c13584
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-weight: bold;
+}
+
+.image-section {
+    position: absolute;
+
+    bottom: 25px;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+.image-section img {
+    width: 300px;
+
+    max-width: 80%;
+
+    height: auto;
+}
+
+.rightside {
+    width: 50%;
+    min-height: 100vh;
+
+    background-color: #142027;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.login-box {
+    width: 75%;
+
+    max-width: 400px;
+}
+
+.login-box h3 {
+    font-size: 14px;
+
+    margin-bottom: 20px;
+
+    color: #e8e8e8;
+}
+.login-box input {
+    width: 100%;
+
+    height: 50px;
+
+    margin-bottom: 10px;
+
+    padding: 0 12px;
+
+    border: 1px solid #465963;
+
+    border-radius: 12px;
+
+    background-color: transparent;
+
+    color: white;
+
+    outline: none;
+
+    font-size: 12px;
+}
+
+.login-box input::placeholder {
+    color: #84929a;
+}
+
+.login-box input:focus {
+    border-color: #8b9aa2;
+}
+
+.login-btn {
+    width: 100%;
+
+    height: 38px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background-color: #1762c4;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 12px;
+}
+
+.login-btn:hover {
+    background-color: #2474dd;
+}
+
+.forgot {
+    display: block;
+
+    text-align: center;
+
+    margin-top: 22px;
+
+    color: white;
+
+    font-size: 12px;
+
+    text-decoration: none;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 35px 0 20px;
+}
+
+.divider span {
+    height: 1px;
+
+    background-color: #394850;
+
+    flex: 1;
+}
+
+.divider p {
+    font-size: 11px;
+
+    color: #84929a;
+}
+
+.facebook-btn {
+    width: 100%;
+
+    height: 38px;
+
+    border: 1px solid #465963;
+
+    border-radius: 20px;
+
+    background-color: transparent;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 12px;
+}
+
+.facebook-btn:hover {
+    background-color: #1c2b33;
+}
+
+.facebook-btn span {
+    color: #1877f2;
+
+    font-weight: bold;
+
+    margin-right: 5px;
+}
+
+.create-btn {
+    width: 100%;
+
+    height: 38px;
+
+    margin-top: 12px;
+
+    border: 1px solid #2389e8;
+
+    border-radius: 20px;
+
+    background-color: transparent;
+
+    color: #168ee8;
+
+    cursor: pointer;
+
+    font-size: 12px;
+}
+
+.create-btn:hover {
+    background-color: #142b3b;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .left-section {
+        width: 100%;
+        min-height: 500px;
+
+        border-right: none;
+
+        border-bottom: 1px solid #39464e;
+    }
+
+    .right-section {
+        width: 100%;
+        min-height: 500px;
+    }
+
+    .left-text h1 {
+        font-size: 24px;
+    }
+
+    .image-section img {
+        width: 250px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .left-section {
+        min-height: 430px;
+    }
+
+    .left-text {
+        top: 130px;
+    }
+
+    .left-text h1 {
+        font-size: 20px;
+    }
+
+    .instagram-logo {
+        width: 50px;
+        height: 50px;
+
+        left: 25px;
+        top: 35px;
+    }
+
+    .login-box {
+        width: 85%;
+    }
+}

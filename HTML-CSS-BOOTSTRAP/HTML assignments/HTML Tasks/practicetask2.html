@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Mission Form</title>
+</head>
+<body>
+    <h2>Secret Mission Form</h2>
+    <form>
+
+        <label for="agent">Agent Name : </label>
+        <input type="text" id="agent" name="agent" required placeholder="enter name">
+        <br><br>
+
+        <label for="mission">Mission Type : </label>
+        <select id="mission" name="mission" required>
+        <option value="">Select mission type</option>
+        <option value="Investigation">Investigation</option>
+        <option value="rescue">Rescue</option>
+        <option value="surveillence">surveillence</option>
+        </select><br><br>
+
+        <label for="prior">Priority : </label>
+        <select id="prior" name="priority" required>
+        <option value="">Select priority type</option>
+        <option value="low">low</option>
+        <option value="medium">medium</option>
+        <option value="high">high</option>
+        </select><br><br>
+
+        <label for="loc">Location : </label>
+        <input type="text" id="loc" name="location" required placeholder="enter location"><br><br>
+
+
+        
+    </form>
+    
+</body>
+</html>

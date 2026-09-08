@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form page</title>
+</head>
+
+<body>
+    <h1>FORM</h1>
+
+    <form action="" method="get" autocomplete="off">
+        <fieldset>
+            <legend>General Form</legend>
+        <label for="fname">First Name</label>
+        <input id="fname" type="text" pattern="[a-zA-Z]+" placeholder="Add your first name" required>
+        <br><br>
+
+        <label for="lname">Last Name</label>
+        <input id="lname" type="text" pattern="[a-zA-Z]+" placeholder="Add your last name" required>
+        <br><br>
+
+        <label for="mob">Mobile</label>
+        <input id="mob" type="text" pattern="+91-[^9876]{1}[0-9]{9}" placeholder="+91-8888999989">
+        <br><br>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter your email">
+        <br><br>
+
+        <label for="birthdate">Birthdate</label>
+        <input type="date" name="bdate" id="birthdate">
+        <br><br>
+
+        <label for="appointment">Appointment date with time</label>
+        <input type="datetime-local" name="datetime" id="appointment">
+        <br><br>
+
+        <label for="password">Password</label>
+        <input type="password" name="pass" id="password" placeholder="enter password">
+        <br><br>
+
+        <label for="">Upload Image</label>
+        <input type="file" name="" id="">
+        <br><br>
+
+        <label for="">Select Colour</label>
+        <input type="color" name="" id="" value="pink">
+        <br><br>
+
+        <label for="">Select Subjects</label>
+        <input type="checkbox" name="subject1" id="eng" value="English">
+        <label for="eng">English</label>
+
+        <input type="checkbox" name="subject2" id="maths" value="Maths">
+        <label for="maths">Mathematics</label>
+
+        <input type="checkbox" name="subject3" id="sci" value="Science">
+        <label for="scir"> Science</label>
+
+        <select name="subject" id="" multiple>
+            <option value="English">ENGLISH</option>
+            <option value="Maths">MATHS</option>
+            <option value="Science">SCIENCE</option>
+        </select>
+
+        <label for="">Select Gender</label>
+        <input type="radio" name="gender" value="male" id=""><label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id=""><label for="female">Female</label>
+
+        <input type="range">
+        <br>
+
+        <textarea name="" id=""></textarea>
+        <br>
+        <pre>
+            1.html
+            2.CSS
+        </pre>
+
+        <br>
+        <marquee direction="" behaviou="">FREE FREE FREE</marquee>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbarOne{
+    background-color: aqua;
+    height: 110px;
+}
+
+.logo{
+    display:inline-block;
+    width: 10%;
+}
+
+.imgLogo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.menus{
+    list-style-type: none;
+    width: 40%;
+    float: right;
+    margin-top:45px;
+}
+
+.navlist{
+    display: inline-block;
+    margin-right:10px;
+}
+
+.navItem:link{
+    color: rgb(139, 84, 6);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navItem:hover{
+    border-bottom: 2px solid rgb(97, 22, 166)
+}
+
+
+.navItem:active{}
+.navItem:visited{
+    color:rgb(13, 144, 9)
+}
+.gradLinear{
+    background-image: linear-gradient(to right #e3e335, #be5163);
+}
+
+.leftSide{
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+.btnNew{
+    border: 6px solid;
+}
+
+.btnNew:hover{
+    background-image: linear-gradient(to right rgb(183, 108, 108), rgb(145, 182, 59));
+}
+
+.heroSection{
+    height: 450px;
+}
+
+.rightSide{
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+.IMGRight{
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin:  25 px auto;
+}
+
+.leftSide h2{
+    font-size: 20px;
+    text-align:center;
+
+}
+
+.leftSide p{
+    font-size: 20px;
+    text-align:justify;
+    padding: 20px;
+}
