@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* element selection  */
+main{
+    display: flex;
+}
+
+/* aside left box  */
+.asideBar{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.999);
+    width: 400px;
+    color:white;
+}
+
+.asideBar h4{
+    font-size: medium;
+    padding: 5px;
+}
+.asideBar p{
+    padding: 5px;
+}
+
+.yourLibrary{
+    display: flex;
+    justify-content: space-between;
+}
+
+.asideCard{
+    background-color: rgb(59, 58, 58);
+    margin-bottom: 30px;
+    width: 375px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.cardBtn{
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
+}
+.cardBtn:hover{
+    display: inline-block;
+    transform: translateX(5%);
+}
+
+.cardContainer{
+    background-color: #121212;
+    color: black;
+    display: flex;
+}
+.card{
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.songName{}
+.artistList{}
+.playBtn{
+    display: none;
+    background-color: green;
+    border-radius: 50%;
+    padding: 15px;
+    border: 0;
+    position: absolute;
+    top: 65%;
+    right: 15%;
+}
+
+.card:hover .playBtn{
+    display: inline-block;
+}
+.imgCard{
+    width: 120px;
+    height: 120px;
+}
+/* signup bottom */
+.signUp{
+    width: 100%;
+    height: 100px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right,rgb(201, 47, 160),rgb(93, 93, 213));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+.leftDiv{
+    margin: 10px;
+    padding: 10px;
+}
+.rightDiv{
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.popular-artists {
+    background-color: #121212;
+    padding: 20px 36px 40px;
+    color: white;
+    display: flex;
+}
+
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.section-header h2 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.section-header a {
+    color: #b3b3b3;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.section-header a:hover {
+    color: white;
+}
+
+
+/* Artist Cards Container */
+
+.artist-container {
+    display: flex;
+
+    gap: 30px;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+}
+
+.artist-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.artist-card {
+    min-width: 215px;
+
+    cursor: pointer;
+}
+
+
+.artist-card img {
+    width: 215px;
+    height: 215px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    display: block;
+
+    margin-bottom: 15px;
+}
+
+
+
+.artist-card h3 {
+    font-size: 18px;
+
+    margin: 0 0 8px;
+
+    font-weight: 600;
+}
+
+
+.artist-card p {
+    color: #b3b3b3;
+
+    font-size: 16px;
+
+    margin: 0;
+}
+
+
+.artist-card:hover img {
+    transform: scale(1.03);
+}
+
+.artist-card img {
+    transition: transform 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+
+    .popular-artists {
+        padding: 20px;
+    }
+
+    .artist-card {
+        min-width: 170px;
+    }
+
+    .artist-card img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .section-header h2 {
+        font-size: 24px;
+    }
+}
